@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Inter"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Document</title>
+    <style>
+      header {
+        height: 30vh;
+      }
+      .blog-T{
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .main {
+        margin-inline: 3%;
+        width: 70%;
+      }
+      .side-bar {
+        width: 30%;
+      }
+      .side-bar ul {
+        width: 80%;
+        list-style-type: circle;
+        flex-direction: column;
+        display: flex;
+        gap: unset;
+      }
+      .side-bar ul li:hover {
+        list-style-type: disc;
+        color: #07a5aa;
+        cursor: pointer;
+      }
+      .side-bar ul li {
+        color: black;
+        background-color: unset;
+        text-align: left;
+      }
+      @media (max-width: 500px) {
+        .root {
+          flex-direction: column-reverse;
+        }
+        .side-bar {
+            padding:none;
+          width: 100%;
+        }
+        .main{
+            width: 100%;
+        }
+        .side-bar ul li {
+        background-color: unset;
+        text-align: left;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">Tanish</div>
+      <nav>
+        <ul>
+          <li>Latest</li>
+          <li>Categories</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+      <div class="h-anim">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+    </header>
+    <div class="root">
+      <div class="main">
+        <h1 class="blog-T">Starting up as a Developer</h1>
+        <img class="blog_img" src="/img/html.png" alt="">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat
+          reprehenderit dignissimos vero aperiam aut deserunt! Voluptate modi
+          libero, exercitationem delectus ipsum, voluptatem fugit natus, dolorem
+          est harum quod eaque perferendis! Lorem ipsum, dolor sit amet
+          consectetur adipisicing elit. Eaque assumenda hic mollitia a, commodi
+          minus, aspernatur veritatis, vero quidem esse facilis? Delectus quidem
+          accusamus tempore temporibus minima maiores eveniet similique.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat
+          reprehenderit dignissimos vero aperiam aut deserunt! Voluptate modi
+          libero, exercitationem delectus ipsum, voluptatem fugit natus, dolorem
+          est harum quod eaque perferendis! Lorem ipsum, dolor sit amet
+          consectetur adipisicing elit. Eaque assumenda hic mollitia a, commodi
+          minus, aspernatur veritatis, vero quidem esse facilis? Delectus quidem
+          accusamus tempore temporibus minima maiores eveniet similique.
+        </p>
+      </div>
+      <div class="side-bar">
+        <h3 class="sub-t">Summary</h3>
+        <ul>
+          <li>WhoAmI</li>
+          <li>How I learnt Coding</li>
+          <li>Chat-GPT</li>
+        </ul>
+      </div>
+    </div>
+    <footer>
+      <div class="about">
+        <h2 class="logo">Tanish</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vero veritatis 
+            optio repellendus corrupti quisquam ut distinctio, dignissimos atque eius 
+            architecto quaerat amet neque at tempora rerum? Autem, impedit ex?</p>
+    </div>
+    <div class="latest">
+        <h2>Latest</h2>
+        <ul>
+            <li>post1</li>
+            <li>post2</li>
+            <li>post3</li>
+            <li>post4</li>
+        </ul>
+    </div>
+    <div class="socials">
+        <h2>Social</h2>
+    </div>
+    </footer>
+  </body>
+</html>

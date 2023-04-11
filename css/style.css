@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    cursor: pointer;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #7dced0; 
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #00767a; 
+  }
+  @font-face {
+    font-family: "Sansation";
+    src: url("/fonts/Sansation_Regular.ttf");
+  }
+  .circle {
+    margin: 20px;
+    height: 20vh;
+    width: 20vh;
+    border-radius: 50%;
+    background-color: #7dced0;
+    z-index: 1;
+    flex-wrap: wrap;
+  }
+  .h-anim {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    top: -10vh;
+    right: -10vh;
+    bottom: -10vh;
+    left: -5vh;
+  }
+  .root {
+    margin-inline: 7%;
+    display: flex;
+  }
+  .main {
+    width: 60%;
+  }
+  .main p {
+    line-height: 1.7em;
+    text-indent: -5px;
+    font-size: 1.1em;
+    font-family: inter;
+    margin-bottom: 20px;
+    color: rgb(54, 54, 54);
+  }
+  .main a{
+    text-decoration: none;
+  }
+  
+  .sub-t {
+    color: rgb(172, 77, 124);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 100;
+    font-variant: small-caps;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .blog-T {
+    font-weight: 200;
+    font-family: "Sansation";
+    margin-top: 20px;
+    width: 100%;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+    z-index: 2;
+  }
+  .main a:hover .blog-T{
+    color: #07a5aa;
+  }
+  .side-bar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .side-bar ul li {
+    padding: 5px;
+    border-radius: 5px;
+  }
+  .side-bar {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+  }
+  header {
+    position: relative;
+    background-color: #b6e3ee;
+    display: flex;
+    justify-content: space-evenly;
+    height: 40vh;
+    border-radius: 0 0 0 3px;
+    overflow: hidden;
+  }
+  .logo {
+    color: #0060a1;
+    font-size: 2rem;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-top: 5%;
+    font-variant: small-caps;
+    font-family: Sansation;
+    z-index: 2;
+  }
+  nav {
+    margin-top: 5%;
+  }
+  .blog_img{
+    margin: 5px 0;
+    width: 100%;
+    height: auto;
+  }
+  nav ul {
+    gap: 20px;
+    font-size: 1.3em;
+    font-family: sans-serif;
+    list-style-type: none;
+    display: flex;
+    float: red;
+    color: white;
+  }
+  nav ul li {
+    color: black;
+    font-weight: bolder;
+    z-index: 2;
+    cursor: pointer;
+  }
+  nav ul li:hover {
+    color: rgb(0, 116, 79);
+  }
+  .newsletter {
+    background-color: #dbebef;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    padding-bottom: 50px;
+    border-radius: 10px;
+    flex-direction: column;
+    width: 80%;
+  }
+  .newsletter .blog-T{
+    margin: 10px;
+    font-size: 3em;
+    font-variant: small-caps;
+  }
+  .newsletter h1 {
+    text-align: center;
+  }
+  .newsletter form {
+    margin: 5px;
+  }
+  .newsletter p{
+    width: 60%;
+    font-family: Inter;
+    font-size: 1.2rem;
+  }
+  .newsletter input {
+    padding: 2px;
+    border: none;
+    height: 2em;
+    background: none;
+    font-size: 1em;
+    border-bottom: #00767a solid 2px;
+    -moz-user-focus: none;
+  }
+  .newsletter *:focus {
+    outline: none;
+  }
+  .newsletter input:last-child {
+    border: none;
+    background-color: #5cabae;
+    padding: 10px;
+    font-size: 1.5em;
+    color: white;
+    padding-inline: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+  }
+  footer {
+    background-color: #b6e3ee;
+    height: 150px;
+    width: 100%;
+  }
+  footer {
+    display: flex;
+  }
+  footer h2{
+    margin-top: 20px;
+  }
+  footer p{
+    text-align: left;
+  }
+  footer div{
+    padding-inline: 20px;
+    width: 25%;
+    text-align: center;
+  }
+  footer div:first-child{
+    width: 50%;
+  }
+  .latest ul li{
+    list-style-type: none;
+    font-size: 1em;
+  }
+  .f-small{
+    font-size: .9em;
+  }
+  @media (max-width: 500px) {
+    .root {
+      flex-direction: column;
+    }
+    .article{
+        margin-inline: 3%;
+    }
+    .main {
+      width: 100%;
+    }
+    .side-bar {
+      width: 100%;
+    }
+    form{
+      flex-direction: column;
+    }
+  }
